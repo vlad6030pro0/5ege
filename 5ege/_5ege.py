@@ -80,6 +80,7 @@ for i in range(1,1000):
         print(i)
         break
 '''
+'''
 def proverka(i):
     a = 0
     while i:
@@ -110,7 +111,73 @@ for i in range(1000,10000):
         if (s(i)=="616"):
             c+=1
 print(c)
+'''
+'''
+def s(i):
+    i = str(i)
+    b=0
+    c=0
+    a = ''
+    b+=int(i[:1])
+    i=i[1:]
+    b+=int(i[:1])
+    c+=int(i[:1])
+    i=i[1:]
+    c+=int(i[:1])
+    a += str(max(b,c))+str(min(b,c))
+    return a
+for i in range(100,1000):
+    if(s(i)=="157"):
+        print(i)
+        break
+'''
+'''
+def sumch(r):
+    a = 0
+    r = int(r)
+    while r:
+        a+=r%2
+        r//=2
+    return a
 
+for i in range(1,1000):
+    r = bin(i)[2:]
+    r = r+str(sumch(r)%2)
+    r = r+str(sumch(r)%2)
+    if  int(r,2)<90:
+        print(int(r,2))
+'''
+'''
+def perevod(i):
+    k=''
+    while i :
+        k=str(i%3)+k
+        i//=3
+    return k
+for i in range(1,1000):
+    r = perevod(i)
+    r+=str(i%3)
+    print(int(r,3))
+'''
+def s(i):
+    i = str(i)
+    b=0
+    c=0
+    a = ''
+    b+=int(i[:1])
+    i=i[1:]
+    b+=int(i[:1])
+    c+=int(i[:1])
+    i=i[1:]
+    c+=int(i[:1])
+    a += str(min(b,c))+str(max(b,c))
+    return a
+for i in range(100,1000):
+    if(s(i)=="1115"):
+        print(i)
+        break
+
+        
         
 
     
