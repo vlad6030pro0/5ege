@@ -159,6 +159,7 @@ for i in range(1,1000):
     r+=str(i%3)
     print(int(r,3))
 '''
+'''
 def s(i):
     i = str(i)
     b=0
@@ -176,6 +177,7 @@ for i in range(100,1000):
     if(s(i)=="1115"):
         print(i)
         break
+'''
 
         
         
